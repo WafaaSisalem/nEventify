@@ -1,0 +1,13 @@
+SET
+                                                             QUERY PLAN                                                             
+------------------------------------------------------------------------------------------------------------------------------------
+ Index Scan using "Booking_userId_idx" on "Booking"  (cost=0.12..8.14 rows=1 width=60) (actual time=0.277..0.286 rows=0.00 loops=1)
+   Index Cond: ("userId" = 'ee000000-0000-0000-0000-000000000001'::uuid)
+   Index Searches: 1
+   Buffers: shared read=1
+ Planning:
+   Buffers: shared hit=109
+ Planning Time: 1.176 ms
+ Execution Time: 0.387 ms
+(8 rows)
+
