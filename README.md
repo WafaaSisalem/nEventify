@@ -29,6 +29,11 @@ npm install
 
 # 3. Create your local env file (never committed):
 cp .env.example .env
+
+# 4. Setup the database and run migrations:
+# Ensure you have PostgreSQL running locally and DATABASE_URL is set in .env
+npx prisma migrate dev
+npx prisma db seed
 ```
 
 There is no server yet - you write `src/server.ts` in Session 1's project
